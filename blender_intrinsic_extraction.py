@@ -74,6 +74,7 @@ def get_calibration_matrix_K_from_blender(mode='simple'):
 if __name__ == "__main__":
     intrinsic = get_calibration_matrix_K_from_blender(mode='simple')
     print(intrinsic)
-    now = datetime.now() 
-    now_str = now.strftime("%Y-%m-%d-%H-%M")
-    np.savetxt('K_'+now_str+'.txt', intrinsic)
+    #now = datetime.now() 
+    #now_str = now.strftime("%Y-%m-%d-%H-%M")
+    #np.savetxt('K_'+now_str+'.txt', intrinsic)
+    np.savetxt('K.txt', intrinsic)
